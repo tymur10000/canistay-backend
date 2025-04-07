@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Verification</title>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <style>
+      @font-face {
+        font-family: "Rubik";
+        src: url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap);
+        font-weight: normal;
+        font-style: normal;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin: 0;
+      }
+      .canistaydaddy-email-verification {
+        font-family: "Rubik", sans-serif;
+        background-color: #E6E6FA; /* Light lavender background */
+        padding: 40px;
+      }
+      .email-container {
+        max-width: 715px;
+        margin: auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(147, 112, 219, 0.2); /* Lavender shadow */
+        overflow: hidden;
+      }
+      .header {
+        background-color: #9370DB; /* Medium purple/lavender */
+        color: #ffffff;
+        text-align: center;
+        padding: 24px;
+        height: 56px;
+        font-size: 24px;
+      }
+      .content {
+        padding: 32px;
+        color: #6A5ACD; /* Slate blue, a darker lavender shade */
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .title {
+        color: #483D8B; /* Dark slate blue */
+        margin-bottom: 64px;
+        border-bottom: 1px solid #E6E6FA; /* Light lavender border */
+      }
+      .title img {
+        display: block;
+        margin-bottom: 32px;
+      }
+      .title > h1 {
+        font-size: 48px;
+        line-height: 57px;
+        padding-bottom: 64px;
+        font-weight: 500;
+      }
+      .content-body {
+        margin-bottom: 32px;
+      }
+      .content-body p {
+        margin-bottom: 32px;
+      }
+      .btn-verify {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 24px;
+        color: #ffffff !important;
+        background-color: #9370DB; /* Medium purple/lavender */
+        text-decoration: none;
+        border-radius: 16px;
+        padding: 16px 32px;
+        font-weight: 500;
+      }
+      .content-footer {
+        margin-top: 4px;
+      }
+      .content-footer > h3 {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 500;
+        margin-bottom: 24px;
+      }
+      .content-footer > ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .content-footer > ul li {
+        margin: 0;
+      }
+      .content-footer > ul > div {
+        display: flex;
+        margin-bottom: 16px;
+      }
+      .content-footer > ul div:last-child {
+        margin-bottom: 0;
+      }
+      .content-footer > ul span {
+        font-size: 24px;
+        color: #8B73DB; /* Custom lavender shade */
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #8B73DB; /* Custom lavender shade */
+        margin: 0.5em 1em;
+      }
+      .footer {
+        padding: 24px;
+        height: 100px;
+        background-color: #483D8B; /* Dark slate blue */
+      }
+      .footer > div {
+        margin-bottom: 24px;
+        height: 18px;
+      }
+      .footer > div:first-child {
+        height: 24px;
+      }
+      .footer > div:last-child {
+        margin-bottom: 0;
+      }
+      .footer a {
+        text-decoration: none;
+        color: #ffffff !important;
+        font-size: 12px;
+        line-height: 14px;
+        margin-right: 16px;
+      }
+      .footer a:last-child {
+        margin-right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canistaydaddy-email-verification">
+      <div class="email-container">
+        <div class="header">
+          <img src="https://www.canistaydaddy.com/mvp/assets/logo.png" alt="Logo" />
+        </div>
+        <div class="content">
+          <div class="title">
+            <img
+              src="https://www.canistaydaddy.com/mvp/assets/icons/email.png"
+              alt="Email"
+              width="96px"
+              height="96px"
+            />
+            <h1>Confirm your email</h1>
+          </div>
+          <div class="content-body">
+            <p>
+              Thanks for joining Canistaydaddy! Confirm your email with one click.
+            </p>
+            <a href="{{link}}" class="btn-verify">Confirm email</a>
+          </div>
+          <div class="content-footer">
+            <h3>With a verified profile, you can:</h3>
+            <ul>
+              <div>
+                <span></span>
+                <li>Access our platform.</li>
+              </div>
+              <div>
+                <span></span>
+                <li>Connect with singles worldwide.</li>
+              </div>
+              <div>
+                <span></span>
+                <li>Send and receive unlimited messages.</li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <div>
+            <a
+              href="https://www.instagram.com/canistaydaddy?igsh=MWpkbDE0ZnM1NzEzaQ=="
+              target="_blank"
+              ><img
+                  src="https://www.canistaydaddy.com/mvp/assets/icons/line/Instagram.png"
+                alt="Instagram"
+            /></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61563069105630&mibextid=ZbWKwL"
+              target="_blank"
+              ><img
+                src="https://www.canistaydaddy.com/mvp/assets/icons/line/Facebook.png"
+                alt="Facebook"
+            /></a>
+            <a
+              href="https://x.com/Canistaydaddy?t=GbxmGuVr89HU3CUKDL7PAg&s=09"
+              target="_blank"
+              ><img
+                src="https://www.canistaydaddy.com/mvp/assets/icons/line/X.png"
+                alt="X"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.canistaydaddy.com/privacy-policy" target="_blank"
+              >Privacy and policy</a
+            >
+          </div>
+          <div>
+            <a href="https://www.canistaydaddy.com/terms-and-conditions" target="_blank"
+              >Terms of use</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
